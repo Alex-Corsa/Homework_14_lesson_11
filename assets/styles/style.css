@@ -198,6 +198,10 @@
 
 /* section-3 */
 
+.section-fifth__services {
+    position: relative;
+}
+
 .section-fifth__services--grid {
     display: grid; 
 	grid-template-columns: repeat( 4, 1fr);
@@ -209,13 +213,28 @@
     ". . . ."; 
 }
 
+.section-fifth__box {
+    position: relative;
+    bottom: 138px;
+}
+
 .section-fifth__box--info {
     position: relative;
     background-color: #00868A;
 }
 
-.section-fifth__btn {
-    padding: 0 15px;
+.section-fifth__btn--position {
+    max-width: 148px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #4FBFA5;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    position: relative;
+    left: 30px;
+    bottom: 200px;
 }
 
 .section-fifth__text {
@@ -223,4 +242,107 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 150%;
+}
+
+.section-fifth__icon--position {
+    position: relative;
+    left: 226px;
+    bottom: 30px;
+}
+
+.section-fifth__wrapper-flex {
+    display: flex;
+    margin-bottom: 79px;
+}
+
+.section-fifth__wrap--grid {
+    max-width: 1228px;
+    display: grid;
+    grid-template-columns: repeat( 3, 158px);
+	grid-template-rows: repeat(2, 1fr); 
+	grid-column-gap: 190px;
+    grid-row-gap: 30px;
+	grid-template-areas: 
+	". . . "
+    ". . . "; 
+}
+
+.section-fifth__h2--text {
+    display: block;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.section-fifth__h3--text {
+    display: block;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.section-fifth__wrapper-2--style {
+    max-width: 238px;
+    margin-left: 134px;
+}
+
+.section-fifth__little-text--style {
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.section-fifth__phone-addrees--style {
+    display: block;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.section-fifth__form-style {
+    padding-bottom: 30px;
+}
+
+.section-fifth__btn-2--style {
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    background-color: #00868A;
+    border: none;
+}
+
+.footer__line--flex {
+	max-width: 1295px;
+    padding: 0 15px;
+    margin: 0 auto;
+	text-align: center;
+	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+}
+
+.footer__text--style-1 {
+    max-width: 300px;
+}
+
+.footer__text--style-2 {
+    max-width: 178px;
+}
+
+.footer__span--style {
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.footer__icon--sizer {
+    max-width: 80px;
 }
