@@ -1,0 +1,27 @@
+*, html, body {
+    box-sizing: border-box;
+}
+
+.header {
+	background-color: #ffffff;
+}
+
+.header__line {
+	max-width: 1295px;
+    padding: 0 15px;
+    margin: 0 auto;
+	text-align: center;
+	align-items: center;
+    display: grid; 
+	grid-template-columns: 260px 185px 199px 331px 80px 80px 80px 80px;
+	grid-template-rows: 90px; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+	". . . . . . . ."; 
+}
+
+.header__btn{
+	width: 270px;
+	height: 40px;
+	background-color: #00868A;
+}
