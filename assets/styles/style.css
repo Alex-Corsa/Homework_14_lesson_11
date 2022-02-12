@@ -1,5 +1,5 @@
 *, html, body {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .header {
@@ -20,8 +20,117 @@
 	". . . . . . . ."; 
 }
 
-.header__btn{
+.header__btn {
 	width: 270px;
 	height: 40px;
 	background-color: #00868A;
+}
+
+.container {
+    max-width: 1295px;
+    margin: 0 auto;
+}
+
+.section-first {
+    background-color: #4FBFA5;
+}
+
+.section-first__line {
+    width: 1295px;
+}
+
+.section-first__menu {
+    padding: 30px 95px 30px 65px;
+    display: inline-block;
+}
+
+.section-first__item {
+    color: #ffffff;
+}
+
+.section-first__item:not(:last-child) {
+	padding-right: 65px;
+}
+
+.section-first__form {
+    display: inline-block;
+    margin-left: 95px;
+}
+
+.section-first__btn--btn-1 {    
+    width: 175px;
+}
+
+.section-first__info {
+    display: flex;
+}
+
+.section-first__text {
+    width: 416px;
+    margin-top: 133px;
+}
+
+.section-first__h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.section-first__img {    
+    width: 925px;
+    margin-left: auto;   
+    display: flex;   
+    justify-content: space-between;
+}
+
+.section-first__span {
+    padding: 20px 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.section-first__btn--btn-2 {
+    width: 163px;
+    color: #ffffff;
+    background-color: #00868A;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.section-first__img-logo {
+    margin-top: 423px;
+}
+
+.section-first__title--grid {
+    display: grid; 
+	grid-template-columns: 648px 324px 324px;
+	grid-template-rows: 80px; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+	". . . "; 
+}
+
+.section-first__title--first {
+    width: 648px;
+    text-align: center;
+    padding-top: 24px;
+    background-color: #00868A;
+}
+.section-first__title--second {
+    width: 324px;
+    text-align: center;
+    padding-top: 24px;
+    background-color: #4FBFA5;
+}
+.section-first__title--third {
+    width: 324px;
+    text-align: center;
+    padding-top: 24px;
+    background-color: #00868A;
 }
