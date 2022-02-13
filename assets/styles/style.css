@@ -1,5 +1,8 @@
-*, html, body {
+*  {
     box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -10,18 +13,23 @@
 }
 
 .header__line {
-	max-width: 1295px;
-    padding: 0 15px;
-    margin: 0 auto;
 	text-align: center;
-	align-items: center;
     display: grid; 
-	grid-template-columns: 260px 185px 199px 331px 80px 80px 80px 80px;
+	grid-template-columns: 260px 185px 199px 331px repeat(4, 80px);
 	grid-template-rows: 90px; 
 	grid-column-gap: 0px;
     grid-row-gap: 0px;
-	grid-template-areas: 
-	". . . . . . . ."; 
+}
+
+.header__line > * {
+    border-right: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__line img {
+    max-width: 100%;
 }
 
 .header--text {
@@ -56,6 +64,7 @@
 .container {
     max-width: 1295px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* section-1 */
@@ -65,7 +74,6 @@
 }
 
 .section-first__line {
-    width: 1295px;
 }
 
 .section-first__menu {
@@ -73,15 +81,15 @@
     display: inline-block;
 }
 
-.section-first__item {
+.section-first__menu-item {
     color: #ffffff;
 }
 
-.section-first__item:not(:last-child) {
+.section-first__menu-item:not(:last-child) {
 	padding-right: 65px;
 }
 
-.section-first__form {
+.section-first__button {
     display: inline-block;
     margin-left: 95px;
 }
@@ -100,11 +108,12 @@
 
 .section-first__info {
     display: flex;
+    width: 1295px;
 }
 
 .section-first__text {
-    width: 416px;
     margin-top: 133px;
+    margin-right: 60px;
 }
 
 .section-first__h1 {
@@ -114,11 +123,8 @@
     line-height: 150%;
 }
 
-.section-first__img {    
-    width: 925px;
-    margin-left: auto;   
-    display: flex;   
-    justify-content: space-between;
+.section-first__img {
+    display: flex;
 }
 
 .section-first__span {
@@ -141,8 +147,9 @@
     border: none;
 }
 
-.section-first__img-logo {
-    margin-top: 423px;
+.section-first__img-text {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .section-first__title--grid {
@@ -151,8 +158,6 @@
 	grid-template-rows: 80px; 
 	grid-column-gap: 0px;
     grid-row-gap: 0px;
-	grid-template-areas: 
-	". . . "; 
 }
 
 .section-first__title {
@@ -164,17 +169,14 @@
 }
 
 .section-first__title--first {
-    width: 648px;
     padding-top: 24px;
     background-color: #00868A;
 }
 .section-first__title--second {
-    width: 324px;
     padding-top: 24px;
     background-color: #4FBFA5;
 }
 .section-first__title--third {
-    width: 324px;
     padding-top: 24px;
     background-color: #00868A;
 }
@@ -183,14 +185,13 @@
 
 .section-second {
     min-height: 350px;
-    background-color: #4FBFA5;
-    opacity: 0.1;
+    background-color: rgba(79, 191, 165, .1);
 }
 
 .section-first__h2--text {
+    text-align: center;
     padding: 80px 0 60px 0;
     color: #00868A;
-    opacity: 1;
     font-weight: bold;
     font-size: 48px;
     line-height: 150%;
@@ -208,9 +209,6 @@
 	grid-template-rows: repeat(1, 1fr); 
 	grid-column-gap: 24px;
     grid-row-gap: 0px;
-	grid-template-areas: 
-	". . . ."
-    ". . . ."; 
 }
 
 .section-fifth__box {
@@ -219,7 +217,6 @@
 }
 
 .section-fifth__box--info {
-    position: relative;
     background-color: #00868A;
 }
 
@@ -232,12 +229,19 @@
     font-size: 18px;
     line-height: 21px;
     border: none;
-    position: relative;
+    position: absolute;
     left: 30px;
-    bottom: 200px;
+    top: 31px;
+}
+
+.section-fifth__text-icon {
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-fifth__text {
+    padding-left: 30px;
+    padding-top: 25px;
     color: #ffffff;
     font-weight: bold;
     font-size: 21px;
@@ -245,9 +249,9 @@
 }
 
 .section-fifth__icon--position {
-    position: relative;
-    left: 226px;
-    bottom: 30px;
+    width: 50px;
+    height: 40px;
+    margin: 37px 37px 37px 15px;
 }
 
 .section-fifth__wrapper-flex {
@@ -262,12 +266,9 @@
 	grid-template-rows: repeat(2, 1fr); 
 	grid-column-gap: 190px;
     grid-row-gap: 30px;
-	grid-template-areas: 
-	". . . "
-    ". . . "; 
 }
 
-.section-fifth__h2--text {
+.section-fifth__h3--text {
     display: block;
     padding-bottom: 20px;
     font-weight: bold;
@@ -275,7 +276,7 @@
     line-height: 150%;
 }
 
-.section-fifth__h3--text {
+.section-fifth__span--text {
     display: block;
     padding-bottom: 15px;
     font-weight: 500;
@@ -343,6 +344,6 @@
     line-height: 150%;
 }
 
-.footer__icon--sizer {
+.footer__icon--sizers {
     max-width: 80px;
 }
