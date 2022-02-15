@@ -394,4 +394,5 @@ a {
 
 .header__visually-impaired--border-left, .footer__icon--border-left {
     border-left: none;
+    padding: 0 25px
 }
