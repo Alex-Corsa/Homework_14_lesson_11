@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "GilroyLight";
+    src: url("../fonts/Gilroy-Light.eot");
+    src: url("../fonts/Gilroy-Light.eot?#ie-ix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Light.woff") format("woff"),
+    url("../fonts/Gilroy-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
