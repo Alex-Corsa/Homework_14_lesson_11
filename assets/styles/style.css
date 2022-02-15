@@ -32,7 +32,7 @@ a {
     max-width: 100%;
 }
 
-.header--text {
+.header__wrap--text {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -90,7 +90,7 @@ a {
 	padding-right: 65px;
 }
 
-.section-first__button {
+.section-first__btn {
     display: inline-block;
     margin-left: 30px;
 }
@@ -189,12 +189,12 @@ a {
 
 /* section-2 */
 
-.section-second {
+.section-third {
     min-height: 350px;
     background-color: rgba(79, 191, 165, .1);
 }
 
-.section-first__h2--text {
+.section-third__h2--text {
     text-align: center;
     padding: 80px 0 60px 0;
     color: #00868A;
